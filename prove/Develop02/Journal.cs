@@ -23,10 +23,7 @@ public class Journal
         }
     }
 
-    public void CreateJournalEntry()
-    {
 
-    }
     public void SaveToCSV()
     {
         Console.Write("What is the file name? ");
