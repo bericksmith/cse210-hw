@@ -2,7 +2,6 @@ using System;
 
 public class MainMenu
 {
-    // Attributes 
     private string _menu = $@"
 Menu Options:
     1. Create New Goal
@@ -16,9 +15,7 @@ Select a choice from the menu: ";
     public string _userInput;
     private int _userChoice = 0;
 
-    // Methods
     public int UserChoice()
-    // Method to display choices to user
     {
         Console.Write(_menu);
 

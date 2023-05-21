@@ -48,7 +48,6 @@ public class ChecklistGoal : Goal
         return _status;
     }
 
-    // Methods
     public override void ListGoal(int i)
     {
         if (Finished() == false)
