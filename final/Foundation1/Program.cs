@@ -5,8 +5,8 @@ class Program
     static void Main(string[] args)
     {
 
-        Console.Write("Foundation Program 1\n");
-        Console.Write("--------------------\n");
+        Console.Write("Foundation Program 1 - Abstraction with YouTube Videos\n");
+        Console.Write("------------------------------------------------------\n");
         Console.WriteLine("(Abstraction: The process of turning complex ideas into simple ones.)\n");
 
 

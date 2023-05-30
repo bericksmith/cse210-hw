@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.Write("Foundation Program 2 - Encapsulation with Online Ordering\n");
+        Console.Write("---------------------------------------------------------\n");
+        Console.WriteLine("(Encapsulation: The act of enclosing something, as if it were in a capsule.)\n");
+
         Address address1 = new Address("1110 NE 100th ave", "Vancouver", "WA", "USA");
         Address address2 = new Address("5103 Eureka Way", "Vancouver", "WA", "USA");
         Address address3 = new Address("123 Eiffel Street", "Paris", "France", "FR");
