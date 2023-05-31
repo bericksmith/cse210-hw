@@ -80,11 +80,5 @@ class Program
         video2.DisplayVideoDetails();
         video3.DisplayVideoDetails();
 
-
-
-
-
-
-
     }
 }

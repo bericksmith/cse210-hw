@@ -28,9 +28,11 @@ class Program
         Console.WriteLine("===============================================");
         Console.WriteLine("                  Order #1");
         Console.WriteLine("===============================================");
+        Console.WriteLine("Shipping Label:");
         Console.WriteLine(order1.GetLabel());
         Console.WriteLine("");
-        Console.WriteLine("Total Cost: $" + order1.CalculateTotal());
+        Console.WriteLine("Shipping: $" + order1.ShippingTotal().ToString("F2"));        
+        Console.WriteLine("Total Cost: $" + order1.CalculateTotal().ToString("F2"));
         Console.WriteLine("-----------------------------------------------");
         Console.WriteLine("Packing List:");
         Console.WriteLine("-----------------------------------------------");
@@ -41,9 +43,11 @@ class Program
         Console.WriteLine("===============================================");
         Console.WriteLine("                  Order #2");
         Console.WriteLine("===============================================");
+        Console.WriteLine("Shipping Label:");
         Console.WriteLine(order2.GetLabel());
         Console.WriteLine("");
-        Console.WriteLine("Total Cost: $" + order2.CalculateTotal());
+        Console.WriteLine("Shipping: $" + order2.ShippingTotal().ToString("F2"));  
+        Console.WriteLine("Total Cost: $" + order2.CalculateTotal().ToString("F2"));
         Console.WriteLine("-----------------------------------------------");
         Console.WriteLine("Packing List:");
         Console.WriteLine("-----------------------------------------------");
@@ -54,9 +58,11 @@ class Program
         Console.WriteLine("===============================================");        
         Console.WriteLine("                  Order #3");
         Console.WriteLine("===============================================");
+        Console.WriteLine("Shipping Label:");
         Console.WriteLine(order3.GetLabel());
         Console.WriteLine("");
-        Console.WriteLine("Total Cost: $" + order3.CalculateTotal());
+        Console.WriteLine("Shipping: $" + order3.ShippingTotal().ToString("F2"));  
+        Console.WriteLine("Total Cost: $" + order3.CalculateTotal().ToString("F2"));
         Console.WriteLine("-----------------------------------------------");
         Console.WriteLine("Packing List:");
         Console.WriteLine("-----------------------------------------------");

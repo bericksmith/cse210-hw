@@ -2,42 +2,26 @@ using System;
 
 public class MainMenu
 {
-    private string _menu = $@"
-Menu Options:
-    1. Create New Goal
-    2. List Goals
-    3. Save Goals
-    4. Load Goals
-    5. Record Event
-    6. Quit
-Select a choice from the menu: ";
-
-    public string _userInput;
-    private int _userChoice = 0;
-
     public int UserChoice()
     {
-        Console.Write(_menu);
+        Console.WriteLine("\nMain Menu:");
+        Console.WriteLine("1. Create new goal");
+        Console.WriteLine("2. List goals");
+        Console.WriteLine("3. Save goals");
+        Console.WriteLine("4. Load goals");
+        Console.WriteLine("5. Record event");
+        Console.WriteLine("6. Quit");
 
-        _userInput = Console.ReadLine();
-        _userChoice = 0;
-
-        try
+        int choice;
+        while (true)
         {
-            _userChoice = int.Parse(_userInput);
+            Console.Write("Enter your choice: ");
+            if (int.TryParse(Console.ReadLine(), out choice))
+            {
+                if (choice >= 1 && choice <= 6)
+                    return choice;
+            }
+            Console.WriteLine("Please try again.");
         }
-        catch (FormatException)
-        {
-            _userChoice = 0;
-        }
-        catch (Exception exception)
-        {
-            Console.WriteLine(
-                $"Unexpected error:  {exception.Message}");
-        }
-        return _userChoice;
     }
-
-
-
 }

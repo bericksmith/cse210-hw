@@ -20,7 +20,7 @@ public class Program
         activities.Add(cyclingActivity);
         activities.Add(swimmingActivity);
 
-        foreach (var activity in activities)
+        foreach (Activity activity in activities)
         {
             Console.WriteLine(activity.GetSummary());
         }

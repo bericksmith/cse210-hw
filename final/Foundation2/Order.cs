@@ -51,4 +51,19 @@ class Order
         return totalCost + shippingCost;
     }
 
+        public decimal ShippingTotal()
+    {
+        decimal shippingCost;
+        if (_customer.findUSA())
+        {
+            shippingCost = 5;
+        }
+            else
+        {
+            shippingCost = 35;
+        }
+        
+        return shippingCost;
+    }
+
 }
